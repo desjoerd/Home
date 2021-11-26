@@ -8,7 +8,6 @@
           "type": "session",
           "style": "diamond",
           "foreground": "#ffc107",
-          "background": "#000",
           "properties": {
             "postfix": " ",
             "display_host": false
@@ -16,11 +15,13 @@
         },
         {
           "type": "path",
-          "style": "powerline",
-          "powerline_symbol": "\uE0B0",
+          "style": "diamond",
+          "leading_diamond": "",
+          "trailing_diamond": "",
           "background": "#18354c",
           "foreground": "#ffc107",
           "properties": {
+            "prefix": "<transparent></> ",
             "home_icon": "\uF7DB",
             "enable_hyperlink": true,
             "folder_icon": "\uF115",
@@ -44,90 +45,6 @@
             "behind_color": "#f17c37",
             "ahead_color": "#89d1dc",
             "stash_count_icon": "\uF692 "
-          }
-        },
-        {
-          "type": "node",
-          "style": "powerline",
-          "powerline_symbol": "",
-          "foreground": "#ffffff",
-          "background": "#6CA35E",
-          "properties": {
-            "prefix": " \uF898 ",
-            "display_version": true
-          }
-        },
-        {
-          "type": "go",
-          "style": "powerline",
-          "powerline_symbol": "",
-          "foreground": "#111111",
-          "background": "#8ED1F7",
-          "properties": {
-            "prefix": " \uE626 ",
-            "display_version": true
-          }
-        },
-        {
-          "type": "julia",
-          "style": "powerline",
-          "powerline_symbol": "",
-          "foreground": "#111111",
-          "background": "#4063D8",
-          "properties": {
-            "prefix": " \uE624 ",
-            "display_version": true
-          }
-        },
-        {
-          "type": "python",
-          "style": "powerline",
-          "powerline_symbol": "",
-          "foreground": "#111111",
-          "background": "#FFDE57",
-          "properties": {
-            "prefix": " \uE235 ",
-            "display_version": true,
-            "display_mode": "files",
-            "display_virtual_env": false
-          }
-        },
-        {
-          "type": "ruby",
-          "style": "powerline",
-          "powerline_symbol": "",
-          "foreground": "#ffffff",
-          "background": "#AE1401",
-          "properties": {
-            "prefix": " \uE791 ",
-            "display_version": true,
-            "display_mode": "files"
-          }
-        },
-        {
-          "type": "azfunc",
-          "style": "powerline",
-          "powerline_symbol": "",
-          "foreground": "#ffffff",
-          "background": "#FEAC19",
-          "properties": {
-            "prefix": " \uf0e7",
-            "display_version": false,
-            "display_mode": "files"
-          }
-        },
-        {
-          "type": "aws",
-          "style": "powerline",
-          "powerline_symbol": "",
-          "foreground": "#ffffff",
-          "background_templates": [
-            "{{if contains \"default\" .Profile}}#FFA400{{end}}",
-            "{{if contains \"jan\" .Profile}}#f1184c{{end}}"
-          ],
-          "properties": {
-            "prefix": " \uE7AD ",
-            "display_default": false
           }
         },
         {
@@ -175,19 +92,6 @@
           "foreground": "#ffc107",
           "properties": {
             "prefix": "<#18354c,transparent></>  "
-          }
-        },
-        {
-          "type": "ytm",
-          "style": "powerline",
-          "powerline_symbol": "\uE0B2",
-          "invert_powerline": true,
-          "background": "#18354c",
-          "foreground": "#ffc107",
-          "properties": {
-            "prefix": " \uF167 ",
-            "paused_icon": " ",
-            "playing_icon": " "
           }
         },
         {
