@@ -9,3 +9,6 @@ Start-Process 'https://ohmyposh.dev/'
 # Management studio
 winget install --exact --source winget --id Microsoft.SQLServerManagementStudio
 winget install --exact --source winget --id Microsoft.AzureCLI
+
+# JetBrains
+winget install --exact --source winget --id JetBrains.Toolbox
