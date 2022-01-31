@@ -16,6 +16,8 @@ winget install --exact --source winget --interactive --id 7zip.7zip
 winget install --exact --source winget --interactive --id SlackTechnologies.Slack
 winget install --exact --source winget --interactive --id Discord.Discord
 winget install --exact --source winget --interactive --id Spotify.Spotify
+winget install --exact --source winget --interactive --id Microsoft.AzureCosmosEmulator
+winget install --exact --source winget --interactive --id Postman.Postman
 
 # Install Fonts
 Start-Process 'https://www.nerdfonts.com/font-downloads'
