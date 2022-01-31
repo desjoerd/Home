@@ -81,29 +81,29 @@
           }
         }
       ]
-    },
-    {
-      "type": "rprompt",
-      "segments": [
-        {
-          "type": "shell",
-          "style": "plain",
-          "background": "#18354c",
-          "foreground": "#ffc107",
-          "properties": {
-            "prefix": "<#18354c,transparent></>  "
-          }
-        },
-        {
-          "type": "time",
-          "style": "diamond",
-          "invert_powerline": true,
-          "trailing_diamond": "",
-          "background": "#18354c",
-          "foreground": "#ffc107"
-        }
-      ]
     }
+    // {
+    //   "type": "rprompt",
+    //   "segments": [
+    //     {
+    //       "type": "shell",
+    //       "style": "plain",
+    //       "background": "#18354c",
+    //       "foreground": "#ffc107",
+    //       "properties": {
+    //         "prefix": "<#18354c,transparent></>  "
+    //       }
+    //     },
+    //     {
+    //       "type": "time",
+    //       "style": "diamond",
+    //       "invert_powerline": true,
+    //       "trailing_diamond": "",
+    //       "background": "#18354c",
+    //       "foreground": "#ffc107"
+    //     }
+    //   ]
+    // }
   ],
   "final_space": true,
   "console_title": true,
