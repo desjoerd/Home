@@ -16,6 +16,9 @@ winget install --exact --source winget --interactive --id Spotify.Spotify
 winget install --exact --source winget --interactive --id Microsoft.AzureCosmosEmulator
 winget install --exact --source winget --interactive --id Postman.Postman
 
+# Azure VPN Client
+winget install --exact --source msstore --interactive --id 9NP355QT2SQB
+
 # Install OhMyPosh
 winget install --exact --source winget --id JanDeDobbeleer.OhMyPosh --interactive
 Start-Process 'https://ohmyposh.dev/'
