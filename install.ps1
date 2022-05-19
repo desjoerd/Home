@@ -16,6 +16,7 @@ winget install --exact --source winget --interactive --id Spotify.Spotify
 winget install --exact --source winget --interactive --id Microsoft.AzureCosmosEmulator
 winget install --exact --source winget --interactive --id Postman.Postman
 winget install --exact --source winget --interactive --id JGraph.Draw
+winget install --exact --source winget --interactive --id PostgreSQL.pgAdmin
 
 # Azure VPN Client
 winget install --exact --source msstore --interactive --id 9NP355QT2SQB
@@ -32,3 +33,6 @@ Start-Process 'https://www.nerdfonts.com/font-downloads'
 
 # Install dapr cli
 Invoke-WebRequest -useb https://raw.githubusercontent.com/dapr/cli/master/install/install.ps1 | Invoke-Expression
+
+# Install dotnet auto complete
+dotnet tool install --global dotnet-suggest

@@ -4,26 +4,37 @@
     {
       "alignment": "left",
       "segments": [
+        // {
+        //   "foreground": "#ffc107",
+        //   "properties": {
+        //     "display_host": false
+        //   },
+        //   "style": "diamond",
+        //   "template": " {{ if .SSHSession }}\uf817 {{ end }}{{ .UserName }} ",
+        //   "type": "session"
+        // },
         {
-          "foreground": "#ffc107",
+          "background": "#ffff66",
+          "foreground": "#111111",
+          "powerline_symbol": "\ue0b0",
           "properties": {
-            "display_host": false
+            "root_icon": "\uf0ad"
           },
-          "style": "diamond",
-          "template": " {{ if .SSHSession }}\uf817 {{ end }}{{ .UserName }} ",
-          "type": "session"
+          "style": "powerline",
+          "template": " \uf0e7 ",
+          "type": "root"
         },
         {
           "background": "#18354c",
           "foreground": "#ffc107",
           "properties": {
             "folder_icon": "\uf115",
-            "folder_separator_icon": " \ue0b1 ",
+            "folder_separator_icon": "/",
             "home_icon": "\uf7db",
             "style": "full"
           },
           "style": "diamond",
-          "template": "<transparent>\ue0b0</> {{ .Path }} ",
+          "template": " {{ path .Path .Location }} ",
           "trailing_diamond": "\ue0b0",
           "type": "path"
         },
@@ -44,17 +55,6 @@
           "style": "powerline",
           "template": " {{ .HEAD }} {{ .BranchStatus }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0}}\uf692 {{ .StashCount }}{{ end }}{{ if gt .WorktreeCount 0}} \uf1bb {{ .WorktreeCount }}{{ end }} ",
           "type": "git"
-        },
-        {
-          "background": "#ffff66",
-          "foreground": "#111111",
-          "powerline_symbol": "\ue0b0",
-          "properties": {
-            "root_icon": "\uf0ad"
-          },
-          "style": "powerline",
-          "template": " \uf0e7 ",
-          "type": "root"
         },
         {
           "foreground": "#ffc107",
