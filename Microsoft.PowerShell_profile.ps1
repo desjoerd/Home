@@ -1,3 +1,8 @@
+# check if on system32 folder, move to root
+if ([System.IO.Path]::(Get-Location) -eq [System.IO.Path]::"C:\Windows\System32") {
+  Set-Location -Path "/"
+}
+
 # oh-my-posh (nice prompts)
 # see https://ohmyposh.dev/
 oh-my-posh --init --shell pwsh --config "$PSScriptRoot/jandedobbeleer.omp.desjoerd.json" | Invoke-Expression
